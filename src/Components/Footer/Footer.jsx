@@ -5,6 +5,7 @@ function Footer() {
     <div>
         <h1>this is footer</h1>
       <p>icons</p>
+       <p>icons</p>
     </div>
   )
 }
