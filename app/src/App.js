@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
      <h1>Navbar</h1>
-     <p>navbaromponent will be there</p>
+     <p>navbar will be updated here okay?</p>
     </div>
   );
 }
