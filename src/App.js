@@ -1,11 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter , Routes , Route } from 'react-router-dom'
+import GuestApp from './Layouts/GuestLayouts/GuestLayout.jsx'
+import AdminApp from './Layouts/AdminLayouts/AdminLayout.jsx'
 
 function App() {
   return (
     <div className="App">
-     <h1>Navbar</h1>
-     <p>navbar component will be there</p>
+
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={
+          <GuestApp/>  
+        }/>
+        <Route path='/admin/*' element={<AdminApp/>}/>
+
+      </Routes>
+      </BrowserRouter>
+     
     </div>
   );
 }
