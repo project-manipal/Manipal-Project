@@ -1,0 +1,71 @@
+.dashboard-wrapper {
+  padding: 2rem;
+  background-color: #f3fdf6; /* Soft mint background */
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h2 {
+  color: #2e7d32; /* Darker but soft green */
+  margin-bottom: 1rem;
+}
+
+.stats-section {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background-color: #e0f2f1; /* Soft teal-green */
+  color: #004d40;
+  flex: 1;
+  padding: 1.2rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.appointments-section {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.appointments-section h3 {
+  color: #2e7d32;
+  margin-bottom: 1rem;
+}
+
+.appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.appointments-table th, 
+.appointments-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.95rem;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status.upcoming {
+  background-color: #fff8e1; /* Light yellow */
+  color: #ff8f00;
+}
+
+.status.confirmed {
+  background-color: #e8f5e9; /* Soft green */
+  color: #388e3c;
+}

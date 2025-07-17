@@ -1,12 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Dactordashboard from './Components/Dashboard/Dactordashboard';
+import DoctorLayoutNavbar from './Components/Navbar/DoctorLayoutNavbar';
 function App() {
   return (
-    <div className="App">
-     <h1>Navbar</h1>
-     <p>navbar component will be there</p>
-    </div>
+    <>
+    <DoctorLayoutNavbar />
+    <Dactordashboard />
+    </>
   );
 }
 
