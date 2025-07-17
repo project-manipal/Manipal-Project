@@ -1,0 +1,135 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  
+}
+
+.login-wrapper {
+  height: 100vh;
+  width: 100vw;
+ 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.login-container {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(244, 241, 241, 0.755);
+}
+
+
+.login-image {
+  width: 350px;
+  height: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-color: #ffffff;
+  background-position: center;
+}
+.login-image img {
+  width: 150%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 0%;
+
+  
+}
+.login-card {
+  width: 350px;
+  height: 430px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+
+.login-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #eee;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #76b2fe;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+
+button {
+  padding: 12px;
+  width: 100%;
+  background: linear-gradient(to right, #15c3ea, #2f80ed);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.02);
+  background: linear-gradient(to right, #2f80ed, #56ccf2);
+}
+.bottom-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #ddd;
+}
+.link {
+  color: #90c7ff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.link:hover {
+  text-decoration: underline;
+}
