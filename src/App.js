@@ -18,6 +18,7 @@ function App() {
       <div style={{ width: '100%', height: '600px', position: 'relative' }}>
       </div>
     </Router>
-  );
-}
+    );
+  }
+
 export default App;
