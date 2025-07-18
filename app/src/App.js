@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginPage from "./Components/LoginFolder/Login";
 import Register from "./Components/RegisterFolder/Register";
 import "./App.css";
+
  import Particles from './Components/LoginFolder/Particles';
 import DoctorLogin from "./Components/LoginFolder/Doctorlogin";
 import AdminLogin from "./Components/LoginFolder/Adminlogin";
