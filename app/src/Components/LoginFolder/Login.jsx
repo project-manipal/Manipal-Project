@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
+
 import doctorImg from '../../assets/Doctor11.jpg';
 
 
@@ -42,8 +43,9 @@ const Login = () => {
   return (
     <div
       className="login-wrapper"
+
       style={{
-  
+
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
@@ -51,8 +53,7 @@ const Login = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-      }}
-    >
+      }}>
       <div className="login-container">
         <div className="login-image">
           <img src={doctorImg} alt="Doctor" />

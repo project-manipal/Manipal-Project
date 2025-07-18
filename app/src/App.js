@@ -10,7 +10,7 @@ const App = () => {
    return (
     <BrowserRouter>
       <div className="app-container" style={{ position: 'relative', minHeight: '100vh' }}>
-  
+
         <div style={{ 
           position: 'absolute', 
           width: '100%', 
@@ -43,6 +43,5 @@ const App = () => {
     </BrowserRouter>
   );
 }
-
 
 export default App
