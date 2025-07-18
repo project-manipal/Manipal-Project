@@ -7,26 +7,20 @@ const DoctorLogin = () => {
   const navigate = useNavigate();
   const [details, setDetails] = useState({ email: '', password: '' });
   const [showPassword, setShowPassword] = useState(false);
-
   const handleChange = (e) => {
     setDetails({ ...details, [e.target.name]: e.target.value });
   };
-
   const togglePasswordVisibility = () => {
     setShowPassword((prev) => !prev);
   };
-
   const handleLogin = (e) => {
     e.preventDefault();
-
     const doctorUsers = [
       { email: "doctor@integraise.com", password: "doc123" },
     ];
-
     const isValid = doctorUsers.some(
       (user) => user.email === details.email && user.password === details.password
     );
-
     if (isValid) {
       alert("✅ Doctor Login Successful");
       navigate('/home');
@@ -34,9 +28,6 @@ const DoctorLogin = () => {
       alert("❌ Invalid doctor credentials");
     }
   };
-
-
-
   return (
     <div className="login-wrapper">
       <div className="login-container">
@@ -64,17 +55,13 @@ const DoctorLogin = () => {
                 required
               />
               <span className="toggle-icon" onClick={togglePasswordVisibility}>
-              
               </span>
             </div>
             <button type="submit">Login</button>
           </form>
-
-        
         </div>
       </div>
     </div>
   );
 };
-
 export default DoctorLogin;

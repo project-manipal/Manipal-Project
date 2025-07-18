@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginPage from "./Components/LoginFolder/Login";
 import Register from "./Components/RegisterFolder/Register";
@@ -6,13 +6,11 @@ import "./App.css";
  import Particles from './Components/LoginFolder/Particles';
 import DoctorLogin from "./Components/LoginFolder/Doctorlogin";
 import AdminLogin from "./Components/LoginFolder/Adminlogin";
-
-function App() {
-  return (
+const App = () => {
+   return (
     <BrowserRouter>
       <div className="app-container" style={{ position: 'relative', minHeight: '100vh' }}>
-        
-   
+  
         <div style={{ 
           position: 'absolute', 
           width: '100%', 
@@ -32,8 +30,6 @@ function App() {
             disableRotation={false}
           />
         </div>
-
-        
         <div style={{ position: 'relative', zIndex: 1 }}>
           <Routes>
              <Route path="/" element={<LoginPage />} /> 
@@ -43,9 +39,10 @@ function App() {
             <Route path="/adminlogin" element={<AdminLogin />} />
           </Routes>
         </div>
-
       </div>
     </BrowserRouter>
   );
 }
-export default App;
+
+
+export default App

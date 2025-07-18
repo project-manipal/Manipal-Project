@@ -31,9 +31,6 @@ const AdminLogin = () => {
       alert("❌ Invalid admin credentials");
     }
   };
-
-
-
   return (
     <div className="login-wrapper">
       <div className="login-container">
@@ -69,5 +66,4 @@ const AdminLogin = () => {
     </div>
   );
 };
-
 export default AdminLogin;
