@@ -4,6 +4,7 @@ import './Register.css';
 import doctorImg from '../../assets/Doctor11.jpg';
 
 
+
 const Register = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
@@ -33,6 +34,7 @@ const Register = () => {
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
+  
 
   const handleRegister = (e) => {
     e.preventDefault();

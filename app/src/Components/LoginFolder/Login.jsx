@@ -14,13 +14,14 @@ const Login = () => {
   };
 
   const handleLogin = (e) => {
+
     e.preventDefault();
 
     const users = [
       { email: "admin@integraise.com", password: "admin123" },
       { email: "hr@integraise.com", password: "hr@123" },
     ];
-
+    
     const isValid = users.some(
       (user) => user.email === details.email && user.password === details.password
     );

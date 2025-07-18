@@ -108,6 +108,7 @@ button {
 }
 button:hover {
   transform: scale(1.02);
+  
   background: linear-gradient(to right, #2f80ed, #56ccf2);
 }
 .bottom-text {
