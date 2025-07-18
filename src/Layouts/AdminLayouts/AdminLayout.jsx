@@ -3,7 +3,7 @@ import './AdminLayout.css'
 import { Route, Routes } from 'react-router-dom'
 import ADashboard from '../../Pages/AdminPages/ADashboard'
 import AdminNavbar from '../../Components/Navbar/AdminNavbar/AdminNavbar'
-
+import AdoctorPages from '../../Pages/AdminPages/AdoctorPages'
 function AdminLayout() {
   
   return (
@@ -11,6 +11,7 @@ function AdminLayout() {
    <AdminNavbar/>
    <Routes>
      <Route path='/' element={<ADashboard/>}/>
+     <Route path='/doctors' element={<AdoctorPages/>}/>
    </Routes>  
     </div>
   )

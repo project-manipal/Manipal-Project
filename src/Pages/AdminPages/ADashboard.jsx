@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { Route } from 'react-router-dom';
+import AdoctorPages from './AdoctorPages';
 function ADashboard() {
   return (
     <div>
