@@ -9,8 +9,8 @@ import AdminLogin from "./Components/LoginFolder/Adminlogin";
 const App = () => {
    return (
     <BrowserRouter>
-      <div className="app-container" style={{ position: 'relative', minHeight: '100vh' }}>
-
+      <div className="app-container" style={{ 
+        position: 'relative', minHeight: '100vh' }}>
         <div style={{ 
           position: 'absolute', 
           width: '100%', 
@@ -42,6 +42,5 @@ const App = () => {
       </div>
     </BrowserRouter>
   );
-}
-
+};
 export default App
