@@ -35,9 +35,7 @@ const DoctorLogin = () => {
     }
   };
 
-  const goToRegister = () => {
-    navigate('/register');
-  };
+
 
   return (
     <div className="login-wrapper">
@@ -66,19 +64,13 @@ const DoctorLogin = () => {
                 required
               />
               <span className="toggle-icon" onClick={togglePasswordVisibility}>
-                {/* {showPassword ? '🙈' : '👁️'} */}
+              
               </span>
             </div>
             <button type="submit">Login</button>
           </form>
 
-          {/* Redirect to register page */}
-          <p className="bottom-text">
-            Don't have an account?{' '}
-            <span className="link" onClick={goToRegister}>
-              Register here
-            </span>
-          </p>
+        
         </div>
       </div>
     </div>

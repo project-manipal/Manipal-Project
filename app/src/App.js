@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
       <div className="app-container" style={{ position: 'relative', minHeight: '100vh' }}>
         
-        {/* Background Particle Effect */}
+   
         <div style={{ 
           position: 'absolute', 
           width: '100%', 
@@ -33,7 +33,7 @@ function App() {
           />
         </div>
 
-        {/* Routes go on top of particles */}
+        
         <div style={{ position: 'relative', zIndex: 1 }}>
           <Routes>
              <Route path="/" element={<LoginPage />} /> 

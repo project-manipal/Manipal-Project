@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Adminlogin.css';
-import doctorImg from '../../assets/Doctor11.jpg'; // reuse same image
+import doctorImg from '../../assets/Doctor11.jpg'; 
 
 const AdminLogin = () => {
   const navigate = useNavigate();
@@ -9,14 +9,11 @@ const AdminLogin = () => {
     email: '',
     password: '',
   });
-
   const handleChange = (e) => {
     setDetails({ ...details, [e.target.name]: e.target.value });
   };
-
   const handleLogin = (e) => {
     e.preventDefault();
-
     const admins = [
       { email: "admin@manipal.com", password: "admin123" },
       { email: "super@manipal.com", password: "superadmin" },
@@ -24,6 +21,7 @@ const AdminLogin = () => {
 
     const isValid = admins.some(
       (user) => user.email === details.email && user.password === details.password
+    
     );
 
     if (isValid) {
@@ -34,9 +32,7 @@ const AdminLogin = () => {
     }
   };
 
-  const goToRegister = () => {
-    navigate('/adminregister'); // If you plan to make this route
-  };
+
 
   return (
     <div className="login-wrapper">
@@ -67,12 +63,7 @@ const AdminLogin = () => {
             />
             <button type="submit">Login</button>
           </form>
-          <p className="bottom-text">
-            Don't have an account?{' '}
-            <span className="link" onClick={goToRegister}>
-              Register here
-            </span>
-          </p>
+        
         </div>
       </div>
     </div>
