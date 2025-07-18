@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
 import doctorImg from '../../assets/Doctor11.jpg';
-// import HospitalBg from '../../assets/HospitalBg.jpg';
+
 
 const Login = () => {
   const navigate = useNavigate();
@@ -43,7 +43,7 @@ const Login = () => {
     <div
       className="login-wrapper"
       style={{
-        // backgroundImage: `url(${HospitalBg})`,
+  
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
