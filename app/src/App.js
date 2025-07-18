@@ -1,11 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Aboutus from './Components/Aboutus/Aboutus';
 
 function App() {
   return (
-    <div className="App">
-     <h1>Navbar</h1>
-     <p>navbar componnt will be there</p>
+    <div className="app">
+      <Aboutus />
     </div>
   );
 }
