@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
-
 import doctorImg from '../../assets/Doctor11.jpg';
-
 
 const Login = () => {
   const navigate = useNavigate();
@@ -92,5 +90,4 @@ const Login = () => {
     </div>
   );
 };
-
 export default Login;
