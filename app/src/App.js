@@ -6,7 +6,6 @@ import "./App.css";
  import Particles from './Components/LoginFolder/Particles';
 import DoctorLogin from "./Components/LoginFolder/Doctorlogin";
 import AdminLogin from "./Components/LoginFolder/Adminlogin";
-
 const App = () => {
    return (
     <BrowserRouter>
@@ -43,6 +42,5 @@ const App = () => {
       </div>
     </BrowserRouter>
   );
-
 };
 export default App
