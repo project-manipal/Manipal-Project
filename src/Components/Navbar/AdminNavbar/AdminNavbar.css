@@ -1,13 +1,12 @@
 .AN-Container{
 width: 100%;
-height: 30%;
+height: 100px;
 background-color: black;
 display: flex;
 flex-direction: row;
 justify-content: space-evenly;
 align-items: center;
 color: white;
-
 }
 ul{
     display: flex;

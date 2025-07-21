@@ -1,5 +1,3 @@
-
-
 import './App.css';
 import { BrowserRouter as Router,Routes, Route, BrowserRouter } from 'react-router-dom';
 import FooterGuest from './Components/Footer/FooterGuest.jsx';
@@ -10,12 +8,16 @@ import GuestApp from './Layouts/GuestLayouts/GuestLayout.jsx';
 import AdminApp from './Layouts/AdminLayouts/AdminLayout.jsx';
 
 function App() {
-  return (
-    
-      <div className="App">
-        <BrowserRouter>
-     
-        <Routes>
+return(
+<div className="App">
+
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<GuestApp/>  }/>
+        <Route path='/admin/*' element={<AdminApp/>}/>
+        <Route path='/AddminDashboard/*' element={<AddminDashboard/>}/>
+        <Route path='/GuestDashboard/*' element={<GuestDashboard/>}/>
+        
           <Route path="/" element={<GuestApp />} />
           <Route path="/admin/*" element={<AdminApp />} />
           <Route path="/FooterDoctor" element={<FooterDoctor />} />
@@ -32,7 +34,9 @@ function App() {
       <div style={{ width: '100%', height: '600px', position: 'relative' }}>
       </div> 
     </div>
-    );
+)
+    
+
   }
 
 
