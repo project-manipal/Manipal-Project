@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.app-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.dot-grid-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+
+  pointer-events: none;
+}
+
+
+.login-wrapper {
+  position: relative;
+  z-index: 1; 
+}
