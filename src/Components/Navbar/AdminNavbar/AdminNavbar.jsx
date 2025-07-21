@@ -1,5 +1,6 @@
 import React from 'react'
 import './AdminNavbar.css'
+import { Link } from 'react-router-dom'
 
 function AdminNavbar() {
   return (
@@ -7,9 +8,10 @@ function AdminNavbar() {
          <div className='AN-Container'>
         <img src='' alt='manipal-logo'/>
         <ul>
-            <li>Doctors</li>
+            <Link to='/admin/doctors'><li>Doctors</li></Link>
             <li>Patients</li>
             <li>security</li>
+            <Link to='/admin' ><li>Admin Dashboard</li></Link>
         </ul>
         <button>
             Login
