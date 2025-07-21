@@ -15,7 +15,7 @@ import CountUp from './CountUp';
 const Aboutus = () => {
   return (
     <div className="about-container">
-      {/* Hero Section */}
+      <p></p>
       <section className="hero-section" style={{ backgroundImage: `linear-gradient(135deg, #0073aa, #004e74), url()` }}>
         <div className="hero-content">
           <h1>About Manipal Hospitals</h1>
