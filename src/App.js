@@ -1,5 +1,3 @@
-
-
 import './App.css';
 import { BrowserRouter as Router,Routes, Route, BrowserRouter } from 'react-router-dom';
 import FooterGuest from './Components/Navbar/Footer/FooterGuest';
@@ -8,6 +6,8 @@ import FooterAdmin from './Components/Navbar/Footer/FooterDoctor';
 import FooterPatient from './Components/Navbar/Footer/FooterPatient';
 import GuestApp from './Layouts/GuestLayouts/GuestLayout.jsx';
 import AdminApp from './Layouts/AdminLayouts/AdminLayout.jsx';
+import AddminDashboard from './Dashboard/AddminDashboard.jsx';
+import GuestDashboard from './Dashboard/GuestDashboard.jsx';
 
 function App() {
   return (
@@ -22,6 +22,8 @@ function App() {
           <Route path="/FooterAdmin" element={<FooterAdmin />} />
           <Route path="/FooterPatient" element={<FooterPatient />} />
           <Route path="/FooterGuest" element={<FooterGuest />} />
+          <Route path="/AddminDashboard" element={<AddminDashboard/>}/>
+          <Route path="/GuestDashboard" element={<GuestDashboard/>}/>
           
         </Routes>
       
