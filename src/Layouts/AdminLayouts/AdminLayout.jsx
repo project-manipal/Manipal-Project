@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import ADashboard from '../../Pages/AdminPages/ADashboard';
 import AdminNavbar from '../../Components/Navbar/AdminNavbar/AdminNavbar';
 import AdoctorPages from '../../Pages/AdminPages/AdoctorPages';
-import FooterAdmin from '../../Components/Navbar/Footer/FooterAdmin';
+import FooterAdmin from '../../Components/Footer/FooterAdmin';
 
 function AdminLayout() {
   const [showFooter, setShowFooter] = useState(false);
