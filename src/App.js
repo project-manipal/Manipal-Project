@@ -15,11 +15,6 @@ return(
 
       <BrowserRouter>
       <Routes>
-        <Route path='/' element={<GuestApp/>  }/>
-        <Route path='/admin/*' element={<AdminApp/>}/>
-        <Route path='/AddminDashboard/*' element={<AddminDashboard/>}/>
-        <Route path='/GuestDashboard/*' element={<GuestDashboard/>}/>
-        
           <Route path="/" element={<GuestApp />} />
           <Route path="/admin/*" element={<AdminApp />} />
           <Route path="/FooterDoctor" element={<FooterDoctor />} />

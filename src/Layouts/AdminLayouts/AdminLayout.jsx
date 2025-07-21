@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './AdminLayout.css';
 import { Route, Routes } from 'react-router-dom';
-import ADashboard from '../../Pages/AdminPages/ADashboard';
+import ADashboard from '../../Dashboard/AddminDashboard';
 import AdminNavbar from '../../Components/Navbar/AdminNavbar/AdminNavbar';
-import AdoctorPages from '../../Pages/AdminPages/AdoctorPages';
+
 import FooterAdmin from '../../Components/Footer/FooterAdmin';
 
 function AdminLayout() {
@@ -24,7 +24,7 @@ function AdminLayout() {
       <AdminNavbar />
       <Routes>
         <Route path='/' element={<ADashboard />} />
-        <Route path='/doctors' element={<AdoctorPages />} />
+  
       </Routes>
       {showFooter && <FooterAdmin />}
     </div>
